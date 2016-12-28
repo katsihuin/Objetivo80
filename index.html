@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<title>Cálculo de Puntos Squad</title>
+ 	  	<meta charset="utf-8">
+ 	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	  	
+ 	</head>
+ 	 <body>
+ 		<!--Here Starts Form-->
+ 		<section class="contact section-fullscreen flex-vertical-center">	
+			<div class="container">
+				<br>
+				<div class="form section-md">
+					<div class="col-md-offset-1 cold-md-8">
+						<h3 class="">Cálculo de Puntos Squad</h3>
+					</div>
+					<form action="" class="">
+						<div class="form-group">
+							<label for="nombre" class="control-label col-md-offset-1 col-md-3">Puntos obtenidos por squad</label>
+							<div class="col-md-5">
+								<input class="form-control" id="puntosSquad" type="text" placeholder="" required="">
+							</div>	
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-offset-1 col-md-3" for="correo">Puntos Maximos Disponibles</label>
+							<div class="col-md-5">
+								<input class="form-control" id="puntosMaximo" type="text" placeholder="" required="">	
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-offset-4 col-md-4">
+								<button onclick="calcular()" class="btn btn-default">Calcular</button>
+							</div>
+						</div>	
+						<div class="col-md-3">
+							<h4 class="text-info">Mensaje:</h4>
+							<div id="salida" style="font-size:50px;" class="text-center">0</div>
+							<div id="mensajes"></div>
+						</div>				
+					</form>
+				
+				</div>
+			</div>		
+		</section>
+
+		<script type="text/javascript" src="main.js"></script>
+  	</body>
+</html> 
