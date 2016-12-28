@@ -4,46 +4,58 @@
 		<title>Cálculo de Puntos Squad</title>
  	  	<meta charset="utf-8">
  	  	<meta name="viewport" content="width=device-width, initial-scale=1">
- 	  	
+ 	  	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
  	</head>
  	 <body>
- 		<!--Here Starts Form-->
- 		<section class="contact section-fullscreen flex-vertical-center">	
+ 		<!--Aqui empieza formulario -->
+ 		<section class="formulario">	
 			<div class="container">
 				<br>
 				<div class="form section-md">
-					<div class="col-md-offset-1 cold-md-8">
+					<div class="text-center">
 						<h3 class="">Cálculo de Puntos Squad</h3>
-					</div>
+						<p class="">Completa el formulario para calcular los puntos del Squad</p>
+					</div><br><br>
 					<form action="" class="">
+
+		<!--Aqui empieza Puntos obtenidos por squad -->			
 						<div class="form-group">
 							<label for="nombre" class="control-label col-md-offset-1 col-md-3">Puntos obtenidos por squad</label>
 							<div class="col-md-5">
-								<input class="form-control" id="puntosSquad" type="text" placeholder="" required="">
+								<input class="form-control" id="puntosSquad" type="text" placeholder="Ingresa los puntos obtenidos por squad" required=""><br>
 							</div>	
 						</div>
+
+		<!--Aqui empieza Puntos Maximos Disponibles -->		
 						<div class="form-group">
 							<label class="control-label col-md-offset-1 col-md-3" for="correo">Puntos Maximos Disponibles</label>
 							<div class="col-md-5">
-								<input class="form-control" id="puntosMaximo" type="text" placeholder="" required="">	
+								<input class="form-control" id="puntosMaximo" type="text" placeholder="Ingresa los puntos Disponibles" required=""><br>
 							</div>
 						</div>
+
+		<!--Aqui empieza botón Calcular -->		
 						<div class="form-group">
 							<div class="col-md-offset-4 col-md-4">
-								<button onclick="calcular()" class="btn btn-default">Calcular</button>
+								<button onclick="calcular()" class="btn btn-default">Calcular</button><br><br>
 							</div>
-						</div>	
-						<div class="col-md-3">
+						</div>
+
+		<!--Aqui empieza Mensaje -->					
+						<div class="col-md-offset-4 col-md-4">
 							<h4 class="text-info">Mensaje:</h4>
-							<div id="salida" style="font-size:50px;" class="text-center">0</div>
-							<div id="mensajes"></div>
+							<div id="salida" style="font-size:50px;" class="text-center">-</div>
+						</div>				
+
+		<!--Link del ejercicio en github -->					
+						<div class="col-md-offset-4 col-md-4">
+							<a href="" class="unstyled">link del ejercicio en github</a>
 						</div>				
 					</form>
-				
 				</div>
 			</div>		
 		</section>
-
+		<!--Aqui termina formulario -->
 		<script type="text/javascript" src="main.js"></script>
   	</body>
 </html> 
